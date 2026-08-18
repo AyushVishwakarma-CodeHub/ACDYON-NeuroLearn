@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-ink font-sans text-body;
+    background-color: #F7F3EA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='173.2' viewBox='0 0 100 173.2'%3E%3Cpath d='M50 0 L100 28.86 L100 86.6 L50 115.47 L0 86.6 L0 28.86 Z M0 86.6 L50 115.47 L50 173.2 M100 86.6 L50 115.47 M100 28.86 L50 57.74 L0 28.86' fill='none' stroke='%23D4C6B2' stroke-width='1' stroke-opacity='0.55'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    animation: honeycombFloat 30s linear infinite;
+  }
+
+  @keyframes honeycombFloat {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100px 173.2px;
+    }
+  }
+
+  ::selection {
+    @apply bg-terracotta/20 text-ink;
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-terracotta;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-container mx-auto px-5 md:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-terracotta via-[#E45B3F] to-ink bg-clip-text text-transparent;
+  }
+
+  .font-editorial {
+    font-family: 'Instrument Serif', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
