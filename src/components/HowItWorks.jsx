@@ -47,7 +47,7 @@ export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="py-20 md:py-28 bg-[#FDFBF7]/85 backdrop-blur-[1px] border-y border-border/40" id="how-it-works">
+    <section className="py-20 md:py-28 border-y border-border/40" id="how-it-works">
       <div className="container-main">
         <SectionHeading
           eyebrow="How NeuroLearn Works"

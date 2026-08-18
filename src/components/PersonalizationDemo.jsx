@@ -44,7 +44,7 @@ export default function PersonalizationDemo() {
   const current = levels.find((l) => l.id === activeLevel);
 
   return (
-    <section className="py-20 md:py-28 bg-peach/15 border-b border-border/40" id="personalization">
+    <section className="py-20 md:py-28 border-b border-border/40" id="personalization">
       <div className="container-main">
         <SectionHeading
           eyebrow="Personalization in action"

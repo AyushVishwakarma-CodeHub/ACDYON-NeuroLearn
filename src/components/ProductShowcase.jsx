@@ -26,7 +26,7 @@ export default function ProductShowcase() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <section className="py-20 md:py-28 bg-white/80 backdrop-blur-[1px] border-y border-border/40" id="features">
+    <section className="py-20 md:py-28 border-y border-border/40" id="features">
       <div className="container-main">
         <SectionHeading
           eyebrow="The NeuroLearn AI Experience"
