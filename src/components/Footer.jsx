@@ -40,9 +40,9 @@ export default function Footer() {
   return (
     <footer className="bg-ink border-t border-white/[0.06]" role="contentinfo">
       <div className="container-main py-14 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 md:gap-6">
           {/* Brand Column */}
-          <div className="col-span-2">
+          <div className="col-span-1 sm:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-7 h-7 bg-terracotta rounded-lg flex items-center justify-center">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none">

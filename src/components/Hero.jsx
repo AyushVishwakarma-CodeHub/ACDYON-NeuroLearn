@@ -61,7 +61,7 @@ export default function Hero() {
             >
               Learning,{' '}
               <br />
-              made <span className="font-editorial italic font-normal text-terracotta inline-block">personal</span>.
+              made <span className="font-editorial italic font-normal text-terracotta inline-block whitespace-nowrap">personal.</span>
             </motion.h1>
 
             <motion.p
@@ -75,7 +75,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap items-center gap-3 mb-10"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-10"
               variants={fadeUp}
               initial="hidden"
               animate="visible"

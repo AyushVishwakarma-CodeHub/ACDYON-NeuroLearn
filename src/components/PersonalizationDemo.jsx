@@ -52,7 +52,7 @@ export default function PersonalizationDemo() {
             <>
               The same topic,
               <br />
-              explained <span className="font-editorial italic font-normal text-terracotta inline-block">for you</span>.
+              explained <span className="font-editorial italic font-normal text-terracotta inline-block whitespace-nowrap">for you.</span>
             </>
           }
           description="NeuroLearn adapts explanations to the learner's level so concepts are easier to understand and remember."
@@ -60,15 +60,15 @@ export default function PersonalizationDemo() {
 
         <div className="max-w-3xl mx-auto">
           {/* Level Selector */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-white rounded-xl border border-border/60 p-1.5 shadow-soft">
+          <div className="flex justify-center mb-8 w-full">
+            <div className="inline-flex bg-white rounded-xl border border-border/60 p-1 sm:p-1.5 shadow-soft max-w-full">
               {levels.map((level) => (
                 <motion.button
                   key={level.id}
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.96 }}
                   onClick={() => setActiveLevel(level.id)}
-                  className={`relative flex items-center gap-2 px-5 py-2.5 rounded-lg text-body-sm font-medium transition-all duration-200 cursor-pointer ${
+                  className={`relative flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-caption sm:text-body-sm font-medium transition-all duration-200 cursor-pointer min-h-[44px] ${
                     activeLevel === level.id
                       ? 'text-white'
                       : 'text-warm-gray hover:text-ink'
@@ -83,8 +83,8 @@ export default function PersonalizationDemo() {
                       transition={{ type: 'spring', stiffness: 500, damping: 22 }}
                     />
                   )}
-                  <span className="relative z-10 flex items-center gap-2">
-                    <level.icon size={15} />
+                  <span className="relative z-10 flex items-center gap-1.5">
+                    <level.icon size={14} className="flex-shrink-0" />
                     {level.label}
                   </span>
                 </motion.button>

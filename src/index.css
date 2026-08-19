@@ -28,6 +28,12 @@
     }
   }
 
+  @media (max-width: 767px) {
+    body {
+      animation: none !important;
+    }
+  }
+
   ::selection {
     @apply bg-terracotta/20 text-ink;
   }

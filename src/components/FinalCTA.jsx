@@ -16,12 +16,12 @@ export default function FinalCTA() {
           <h2 className="text-display-sm md:text-display-md font-semibold text-white tracking-tight mb-5">
             Your learning path
             <br />
-            starts with <span className="font-editorial italic font-normal text-terracotta inline-block hover:scale-105 transition-transform">you</span>.
+            starts with <span className="font-editorial italic font-normal text-terracotta inline-block whitespace-nowrap hover:scale-105 transition-transform">you.</span>
           </h2>
           <p className="text-body-lg text-white/55 mb-10 max-w-md mx-auto">
             Explore NeuroLearn and experience personalized learning built around your goals and progress.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-w-xs sm:max-w-none mx-auto">
             <Button variant="dark" size="lg">
               Start learning <ArrowRight size={16} />
             </Button>

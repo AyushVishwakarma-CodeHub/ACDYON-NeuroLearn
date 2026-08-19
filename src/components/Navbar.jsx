@@ -83,7 +83,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-ink/[0.04] transition-colors"
+          className="lg:hidden flex items-center justify-center w-11 h-11 min-h-[44px] min-w-[44px] rounded-lg hover:bg-ink/[0.04] active:bg-ink/[0.08] transition-colors cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
