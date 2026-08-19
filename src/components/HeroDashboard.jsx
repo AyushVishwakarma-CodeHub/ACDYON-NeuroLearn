@@ -78,6 +78,39 @@ export default function HeroDashboard() {
     >
       {/* Crisp Application Container */}
       <div className="bg-white rounded-2xl shadow-dashboard hover:shadow-card-hover border border-border/60 overflow-hidden transition-shadow duration-300 relative z-10">
+        {/* Mobile Horizontal Navigation Bar */}
+        <div className="md:hidden flex items-center gap-1.5 overflow-x-auto p-2.5 bg-[#FDFBF7] border-b border-border/40 scrollbar-none">
+          {[
+            { label: 'Dashboard', icon: LayoutDashboard },
+            { label: 'Analytics', icon: BarChart3 },
+            { label: 'AI Tutor', icon: Bot },
+            { label: 'Quizzes', icon: BrainCircuit },
+            { label: 'Flashcards', icon: Layers },
+            { label: 'My Library', icon: BookOpen },
+            { label: 'AI Generator', icon: Wand2 },
+            { label: 'Study Planner', icon: Calendar },
+            { label: 'Achievements', icon: Trophy },
+            { label: 'Store', icon: ShoppingBag },
+            { label: 'Settings', icon: Settings },
+          ].map((item) => {
+            const isActive = activeNav === item.label;
+            return (
+              <button
+                key={item.label}
+                onClick={() => setActiveNav(item.label)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium whitespace-nowrap transition-colors flex-shrink-0 cursor-pointer ${
+                  isActive
+                    ? 'bg-terracotta text-white font-semibold shadow-xs'
+                    : 'bg-white border border-border/50 text-warm-gray hover:text-ink'
+                }`}
+              >
+                <item.icon size={13} />
+                <span>{item.label}</span>
+              </button>
+            );
+          })}
+        </div>
+
         <div className="flex min-h-[440px] md:min-h-[480px]">
           {/* Sidebar */}
           <div className="hidden md:flex flex-col w-[210px] bg-[#FDFBF7] border-r border-border/50 p-3.5">
