@@ -2,6 +2,8 @@
 
 A world-class, interactive marketing and product homepage for **NeuroLearn AI** — an AI-powered personalized learning platform that adapts explanations to every learner's level. Built for the **ACDYON Technologies Frontend Assignment (Part 2)**.
 
+**Live Demo:** [https://acdyon-neurolearnai.vercel.app/](https://acdyon-neurolearnai.vercel.app/)
+
 ---
 
 ## 🌟 Key Features
