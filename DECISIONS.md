@@ -1,49 +1,66 @@
-# DECISIONS.md
+# Design Decisions — NeuroLearn AI
 
-## 1. Why did you choose this approach instead of the obvious alternative?
+## 1. Why did I choose this approach instead of the obvious alternative?
 
-The obvious alternative would have been a page full of marketing copy — bold claims, testimonials, logos, and stock imagery. Instead, I chose a **product-first approach** where the strongest visual elements are actual product UI mockups built with real HTML/CSS.
+I chose to build a premium product-focused homepage for NeuroLearn AI rather than a conventional marketing landing page.
 
-The hero section features a realistic NeuroLearn dashboard (not an illustration or screenshot). The product showcase section renders a working quiz UI with correct/incorrect answer states, a flashcard component, performance analytics, and AI recommendations. The personalization demo is a live interactive element where users can switch between Beginner, Intermediate, and Advanced explanations of the same topic.
+The obvious approach would have been to create a typical AI/EdTech landing page with large illustrations, multiple feature cards, testimonials, statistics, and decorative animations. Instead, I focused on showing the product itself as the primary visual element.
 
-This approach is harder to execute — building realistic product UIs from scratch takes more time than dropping in stock images — but it communicates the product far more convincingly. An evaluator can immediately see what NeuroLearn does rather than reading about it.
+The homepage communicates NeuroLearn through its actual product experience: personalized learning paths, AI insights, quiz performance, flashcards, learning analytics, and adaptive explanations.
 
-I also chose the **Ivory + Ink + Burnt Orange** color system over the more common blue/purple SaaS palette to create visual distinction. Most AI/EdTech products default to blue gradients. The warm, editorial direction stands apart while still feeling professional and trustworthy.
+I also chose a warm ivory, ink, and burnt-orange visual system instead of the common blue/purple AI SaaS aesthetic. The goal was to create a more distinctive, human and editorial identity while keeping the interface professional and technology-focused.
 
-## 2. What trade-off did you make because of the time limit?
+The knowledge-network background was used as a subtle visual representation of connected knowledge and personalized learning rather than as a decorative AI graphic.
 
-The biggest trade-off was **depth of interactivity**. With more time, I would have:
+---
 
-- Made the hero dashboard interactive (clickable sidebar items that switch views)
-- Added a working flashcard flip animation with front/back content
-- Created more micro-interactions in the quiz UI (hover states on options, animated score counting)
-- Built a dark mode toggle
-- Added page transition animations between anchor scroll targets
+## 2. What trade-off did I make because of the time limit?
 
-I also chose Tailwind CSS over a custom CSS system. Tailwind speeds up development significantly, but means the codebase depends on a utility framework rather than a bespoke design system. For a production product, I might prefer CSS Modules or a custom system — but for this assignment, Tailwind was the right trade-off for speed without sacrificing quality.
+I prioritized the core homepage experience over building additional product pages or backend functionality.
 
-The product UI mockups use static demo data rather than fetching from an API or using interactive state management. This was intentional — the assignment calls for a marketing homepage, not a functional application, and adding unnecessary complexity would not improve the result.
+The assignment focuses on the frontend homepage, so I intentionally kept the project frontend-only and used representative product data for the dashboard and interactions.
 
-## 3. Where did you use AI, and what did I personally verify/change afterward?
+I focused the available time on:
 
-I used AI (Claude) as a coding assistant throughout the project. Here's what AI helped with and what I verified:
+- Responsive design
+- Product UI presentation
+- Typography and spacing
+- Visual hierarchy
+- AI personalization interaction
+- AI quiz interaction
+- Mobile responsiveness
+- Overall visual polish
 
-**AI-assisted:**
-- Component scaffolding and boilerplate code
-- Tailwind class composition for responsive layouts
-- Framer Motion animation configuration
-- Content generation for the personalization demo explanations (Beginner/Intermediate/Advanced derivatives content)
-- Quiz question and answer option content
+As a result, features such as authentication, database integration, real AI API calls, and additional application screens were outside the scope of this submission.
 
-**What I personally verified and adjusted:**
-- All color values match the locked design spec exactly
-- Typography hierarchy renders correctly at all breakpoints
-- The dashboard mockup looks like a real SaaS product (not a generic template)
-- Responsive behavior at 390px, 768px, and 1440px — I tested in-browser and fixed layout issues
-- No fake social proof, fake testimonials, or unsupported claims appear anywhere
-- The personalization demo tab switching works smoothly with proper AnimatePresence transitions
-- Production build completes with zero errors and zero warnings
-- All interactive elements have proper ARIA labels and keyboard accessibility
-- The educational content in the personalization demo is technically accurate
+This allowed me to spend more time making the requested homepage feel complete and production-ready.
 
-AI accelerated the implementation significantly, but every visual decision, layout choice, and content decision was reviewed and adjusted to meet the assignment's quality bar.
+---
+
+## 3. Where did I use AI, and what did I personally verify or change afterward?
+
+I used AI tools during the design and development process for ideation, UI exploration, implementation assistance, and refinement.
+
+AI was used to explore different homepage directions and to assist with frontend implementation ideas and code generation.
+
+I personally reviewed and refined the resulting work rather than accepting the generated output directly.
+
+I made decisions about:
+
+- The final visual direction
+- Ivory, ink and burnt-orange color system
+- Homepage structure
+- Product-first hero
+- Product dashboard presentation
+- Knowledge-network background
+- Typography hierarchy
+- Section spacing
+- Responsive behavior
+- AI quiz interaction
+- Personalization interaction
+- Removal of unnecessary visual elements
+- Removal of unsupported social-proof claims
+
+I also manually tested the responsive experience at desktop and mobile widths and refined the layout where necessary.
+
+The final implementation represents a combination of AI-assisted development and my own design decisions, testing, and refinement.
